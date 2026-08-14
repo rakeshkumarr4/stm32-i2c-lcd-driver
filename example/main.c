@@ -26,7 +26,7 @@ void I2C_Init(void)
     /* Disable I2C before configuring */
     I2C1->CR1 &= ~I2C_CR1_PE;
 
-    /* Configure I2C clock: 16 MHz / 80 = 200kHz approx */
+    /* Configure I2C clock: 16 MHz / (2 * 80) = 100kHz approx */
     I2C1->CR2 = 16;
     I2C1->CCR = 80;
     I2C1->TRISE = 17;
