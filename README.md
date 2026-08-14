@@ -18,7 +18,7 @@ stm32-i2c-lcd-driver/
 - examples/
     - main.c
 
-# Features
+## Features
 
 - Cursor display and hiding
 - Blink control
@@ -29,7 +29,7 @@ stm32-i2c-lcd-driver/
 - Backlight control
 - Works with STM32 microcontrollers using direct register access
 
-# Supported hardware
+## Supported hardware
 
 This library is designed for:
 - HD44780-compatible character LCDs
@@ -51,6 +51,8 @@ Check your exact backpack module because some modules use:
 - or another I2C address
 Use a proper I2C scanner if necessary to detect the address.
 
+## Example
+
 Initialization:
 Call:
 I2C_LCD_Init(address, rows, columns);
@@ -71,5 +73,5 @@ API:
 - void LCD_putstr(const char *s);
 - void LCD_putint(int value);
 
-Author:
+## Author
 Rakesh Kumar Ramalingam / rakeshkumarr4
