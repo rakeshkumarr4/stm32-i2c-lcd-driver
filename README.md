@@ -3,7 +3,7 @@ Lightweight STM32 library for HD44780-compatible character LCDs using an I2C bac
 
 This driver is intended for 16x2, 20x4, and other HD44780-compatible character displays connected through a backpack module over I2C. It provides basic text output, cursor control, clearing, and integer printing.
 
-Check the example/main.c file for a working implementation.
+### Check the example/main.c file for a working implementation.
 
 ## Repository layout
 
