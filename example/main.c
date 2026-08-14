@@ -2,6 +2,14 @@
 #include "i2c.h"
 #include "lcd.h"
 
+void SystemClock_Config(void)
+{
+    /* Minimal HSI config for 16 MHz clock */
+    RCC->CR |= RCC_CR_HSION;
+    while (!(RCC->CR & RCC_CR_HSIRDY)) {}
+    RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_SW) | RCC_CFGR_SW_HSI;
+}
+
 void I2C_Init(void)
 {
     /* Enable I2C1 and GPIOB clocks */
@@ -37,6 +45,7 @@ void I2C_Init(void)
 
 int main(void)
 {
+    SystemClock_Config();
     I2C_Init();
 
     /* Address, rows, columns */
