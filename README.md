@@ -73,5 +73,8 @@ API:
 - void LCD_putstr(const char *s);
 - void LCD_putint(int value);
 
+## License
+This project is licensed under the MIT License.
+
 ## Author
 Rakesh Kumar Ramalingam / rakeshkumarr4
