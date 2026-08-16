@@ -1,4 +1,5 @@
-#include "stm32f4xx.h"
+#include "stm32f4xx.h" /* Change this to the matching device header for your MCU,
+                        e.g. stm32f407xx.h, stm32f103xx.h, etc. */
 #include "i2c.h"
 #include "lcd.h"
 
